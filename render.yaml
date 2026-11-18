@@ -1,0 +1,15 @@
+# Cấu hình triển khai AquaSentinel lên Render (render.com)
+# Đặt file này ở thư mục gốc của repo GitHub (cùng cấp với thư mục server/)
+services:
+  - type: web
+    name: aquasentinel
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    region: singapore
+    healthCheckPath: /api/status
+    envVars:
+      - key: AQUA_CONFIG      # dán chuỗi từ trang Quản trị > Sao lưu (để trống ở lần chạy đầu)
+        sync: false
