@@ -1,0 +1,6 @@
+{
+  "name": "AquaSentinel — Giám sát An toàn Hồ bơi",
+  "description": "Hệ thống giám sát an toàn hồ bơi thông minh theo thời gian thực với mô phỏng ESP32 + MPU6050, cảnh báo SOS, đăng nhập quản lý và sẵn sàng triển khai GitHub & Vercel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
